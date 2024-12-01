@@ -62,20 +62,33 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        queue q = new queue(7);
-        q.add(0);
-        q.add(1);
-        q.add(2);
-        q.add(3);
-        q.add(4);
-        System.out.println(q.remove());
-        q.add(5);
-        System.out.println(q.remove());
-        q.add(6);
+    //     queue q = new queue(7);
+    //     q.add(0);
+    //     q.add(1);
+    //     q.add(2);
+    //     q.add(3);
+    //     q.add(4);
+    //     System.out.println(q.remove());
+    //     q.add(5);
+    //     System.out.println(q.remove());
+    //     q.add(6);
         
-        while (!q.isEmpty()) {
-            System.out.println(q.peek());
-            q.remove();
-        }
-    }
+    //     while (!q.isEmpty()) {
+    //         System.out.println(q.peek());
+    //         q.remove();
+    //     }
+        simpleQueue simpleQueue= new simpleQueue(5);
+        simpleQueue.Enqueue(200);
+        simpleQueue.Enqueue(300);
+        simpleQueue.display();
+        simpleQueue.Enqueue(50);
+        
+        simpleQueue.display();
+        System.out.println("Deleted"+simpleQueue.dequeue());
+        simpleQueue.display();
+        simpleQueue.Enqueue(410);
+        simpleQueue.Enqueue(105);
+        simpleQueue.display();
+
+     }
 }
