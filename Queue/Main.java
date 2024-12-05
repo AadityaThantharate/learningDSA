@@ -1,7 +1,5 @@
 package Queue;
 
-
-
 public class Main {
     static class queue{
         static int arr[];
