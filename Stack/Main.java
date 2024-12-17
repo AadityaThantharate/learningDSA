@@ -1,81 +1,82 @@
 import java.util.*;
 
 public class Main {
-    // static class Node {
-    //     int data;
-    //     Node next;
+    static class Node {
+        int data;
+        Node next;
 
-    //     public Node(int data) {
-    //         this.data = data;
-    //         next = null;
-    //     }
+        public Node(int data) {
+            this.data = data;
+            next = null;
+        }
 
-    // }
+    }
 
-    // static class Stack {
-    //     public static Node head;
+    static class Stack {
+        public static Node head;
 
-    //     public static boolean isEmpty() {
-    //         return head == null;
-    //     }
+        public static boolean isEmpty() {
+            return head == null;
+        }
 
-    //     public static void push(int data) {
-    //         Node newNode = new Node(data);
-    //         if (isEmpty()) {
-    //             head = newNode;
-    //             return;
-    //         }
-    //         newNode.next = head;
-    //         head = newNode;
-    //     }
+        public static void push(int data) {
+            Node newNode = new Node(data);
+            if (isEmpty()) {
+                head = newNode;
+                return;
+            }
+            newNode.next = head;
+            head = newNode;
+        }
 
-    //     public static int pop() {
-    //         if (isEmpty()) {
-    //             return-1;
-    //         }
+        public static int pop() {
+            if (isEmpty()) {
+                return-1;
+            }
 
-    //             int top = head.data;
-    //             head = head.next;
-    //             return top;
+                int top = head.data;
+                head = head.next;
+                return top;
             
-    //     }
+        }
 
-    //     public static int peek() {
-    //         if (isEmpty()) {
-    //             return -1;
-    //         }
-    //         return head.data;
-    //     }
-    // }
+        public static int peek() {
+            if (isEmpty()) {
+                return -1;
+            }
+            return head.data;
+        }
+    }
 
     // By Array List
-    // tatsic class Stack {
-    //     static ArrayList<Integer> list = new ArrayList<>();
-    //     public static boolean isEmpty(){
-    //         return list.size() ==0;
-    //     }
-    //     //push
-    //     public static void push(int data){
-    //         list.add(data);
-    //     }
-    //     public static int pop(){
-    //         if(isEmpty()){
-    //             return -1;
-    //         }
-    //         int top = list.get(list.size()-1);
-    //         list.remove(list.size()-1);
-    //         return top;
-    //     }
-    //     public static int peek(){
-    //         if(isEmpty()){
-    //             return -1;
-    //         }
-    //         return  list.get(list.size()-1);
-    //     }
-    // }
+    static class Stack {
+        static ArrayList<Integer> list = new ArrayList<>();
+        public static boolean isEmpty(){
+            return list.size() ==0;
+        }
+        //push
+     
+     p   public static void push(int data){
+            list.add(data);
+        }
+        public static int pop(){
+            if(isEmpty()){
+                return -1;
+            }
+            int top = list.get(list.size()-1);
+            list.remove(list.size()-1);
+            return top;
+        }
+        public static int peek(){
+            if(isEmpty()){
+                return -1;
+            }
+            return  list.get(list.size()-1);
+        }
+    }
 
-    //BY fRAMEWORK
-    // static class Stack{
+    // BY fRAMEWORK
+    static class Stack{
     public static void pushAtBottom(int data,Stack<Integer> s) {
         if(s.isEmpty()){
             s.push(data);

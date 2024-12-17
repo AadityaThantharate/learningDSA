@@ -3,9 +3,7 @@ package BinaryTreesyt;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import Circular.Node;
-
-public class binaryTree {
+public class binaryTree { 
         static class Node{
         int data;
         Node left;
